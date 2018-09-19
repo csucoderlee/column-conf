@@ -33,7 +33,6 @@ public class ColumnConfigService implements IColumnConfigService{
 
         String key = COLUMN_CONF_CACHE_PREFIX + account.getId()+ "_" + pageId;
 
-
         //todo 这个地方要从缓存服务中取缓存中的数据 记得try catch
         value = cache1.get(key);
         if(null != value) {

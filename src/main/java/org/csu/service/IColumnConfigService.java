@@ -16,6 +16,12 @@ public interface IColumnConfigService {
      */
     ColumnConfigListWrapper getColumnConfigList(Account account, Long pageId);
 
+    /**
+     * 用户去勾选自己想要显示的列配置，需要保存相关的配置
+     * @param account
+     * @param pageId
+     * @param columnConfigVOList
+     */
     void updateColumnConfig(Account account, Long pageId, List<ColumnConfigVO> columnConfigVOList);
 
 }
