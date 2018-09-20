@@ -18,6 +18,7 @@ public class ColumnConfigService implements IColumnConfigService{
 
     public static final String PAGE_COLUMN_CONF_CACHE_PREFIX = "page_column_config_";
 
+    // 模拟缓存系统
     Map<String, ColumnConfigListWrapper> cache1 = new HashMap<>();
     Map<String, List<PageColumnConfig>> cache2 = new HashMap<>();
 
